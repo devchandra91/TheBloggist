@@ -1,0 +1,119 @@
+.your-blogs-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px 0;
+}
+
+.your-blogs-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.your-blogs-header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.your-blogs-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  margin-right: auto;
+}
+
+.your-blogs-profile .profile-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0 10px;
+}
+
+.your-blogs-profile .profile-picture {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.your-blogs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.your-blogs-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.your-blogs-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.your-blogs-card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.your-blogs-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.your-blogs-card .card-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.your-blogs-card .card-buttons button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #2c3e50;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: color 0.2s ease-in-out;
+}
+
+.your-blogs-card .card-buttons button:hover {
+  color: #2980b9;
+}
+
+.your-blogs-create-button {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: #2980b9;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px 30px;
+  border-radius: 50%;
+  box-shadow: 0
